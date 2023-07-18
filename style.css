@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Rammetto+One&display=swap");
+
+:root {
+  --pri-color: #fb9440;
+  --light: #f4f4f4;
+  --light-bg: rgba(112, 73, 26, 0.48);
+}
+
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("images/Lines.png") center center/cover no-repeat #f9a938;
+  font-family: "Poppins", sans-serif;
+  color: var(--light);
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: var(--light);
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--light);
+}
+
+/* Utilities */
+
+.heading {
+  font-family: "Rammetto One", cursive;
+}
+
+.custom-card, 
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  background-color: var(--light-bg);
+  padding: 15px;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+}
+
+/* Header */
+header {
+  background-color: rgb(251, 148, 64, 0.16);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 0px;
+  z-index: 999;
+}
+
+.logo {
+  width: 55px;
+}
+
+.logo-text {
+  font-weight: 900;
+  margin-left: 10px;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-right: 0.6rem;
+  padding-left: 0.6rem;
+}
+
+.nav-link {
+  /* font-weight: 700; */
+  transition: 0.4s;
+  font-size: 1.2rem;
+}
+
+.nav-link:hover {
+  color: var(--pri-color);
+}
+
+.support {
+  background-color: var(--pri-color);
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  padding: 0.5rem 1rem;
+}
+
+.support:hover {
+  transition: 0.4s;
+  color: var(--pri-color);
+  background-color: var(--light);
+}
+
+/* Home */
+#home {
+  background: url("images/hero.png") center center/cover no-repeat;
+  height: 80vh;
+  width: 100%;
+}
+
+#home .heading {
+  font-size: 2rem;
+  text-shadow: 5px 10px 1rem rgb(51, 51, 51,0.6);
+}
+
+#home .subheading {
+  text-shadow: 1px 3px 2px #333;
+}
+
+/* Features */
+#features {
+  position: relative;
+  top: -110px;
+}
+
+#features .icon {
+  width: 50px;
+}
+
+.swiper {
+  height: fit-content;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 1.4rem !important;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--pri-color);
+    font-weight: 900;
+}
+
+
+.swiper-pagination-bullet-active {
+    background-color: var(--pri-color) !important;
+  }
+  .swiper-pagination-bullet {
+    background-color: #fff;
+  }
+  
+
+#hero .heading {
+    font-size: 3rem;
+    text-shadow: 5px 10px 1rem rgb(51, 51, 51,0.6);
+}
+
+.hero-image {
+    width: 450px;
+}
+
+
+.cloud {
+  width: 25rem;
+  position: absolute;
+  bottom: 50%;
+  z-index: -1;
+  display: none;
+}
+
