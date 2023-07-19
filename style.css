@@ -75,6 +75,10 @@ a:hover {
    backdrop-filter: blur(4px);
 }
 
+.app {
+  margin-right: 1rem;
+}
+
 /* Header */
 header {
   position: fixed;
@@ -333,12 +337,16 @@ header {
 
   .app {
     width: 8rem;
-    margin-right: 1rem;
+    
   }
 
   #hero .heading,
   #games .heading {
     font-size: 1.5rem;
+  }
+
+  .logo-text {
+    font-size: 1.2rem;
   }
  
 }

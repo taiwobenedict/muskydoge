@@ -22,7 +22,7 @@ const swiper = new Swiper(".swiper", {
   $("nav a").on("click", function (e) {
     e.preventDefault();
     const href = $(this).attr("href");
-  $("html, body").animate({ scrollTop: $(href).offset().top  /* -100 */}, 500);
+  $("html, body").animate({ scrollTop: $(href).offset().top  -100 }, 500);
   });
 
 
@@ -38,7 +38,7 @@ const swiper = new Swiper(".swiper", {
 
   document.body.onscroll = () => {
   
-    if (document.body.scrollTop == 0) {
+    if (document.body.scrollTop == 0  && !toggler.firstChild.classList.contains('fa-times')) {
       header.classList.remove('navbar-bg')
     } else {
       header.classList.add('navbar-bg')
