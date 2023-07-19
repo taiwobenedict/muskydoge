@@ -51,6 +51,7 @@ a:hover {
   padding: 15px;
   border-radius: 20px;
   backdrop-filter: blur(5px);
+  display: inline-block;
 }
 
 /* Header */
@@ -158,7 +159,100 @@ header {
     width: 450px;
 }
 
+/* How to get started */
+.start-items {
+  margin-top: 1rem;
+}
 
+.start-items .item {
+  border-top: solid 5px rgba(112, 73, 26, 0.48);
+  padding-right: 10px;
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+/* Games */
+.boxes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.boxes .custom-card {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+#tokenomics .custom-card {
+  width: 100%;
+  text-align: center;
+}
+
+.token-image {
+  width: 100px;
+  margin:0 auto;
+}
+
+/* RoadMap */
+#roadmap .heading {
+  margin-bottom: 6rem;
+}
+.phase {
+  border-top: solid 25px #F5F683;
+  position: relative;
+
+}
+
+.phase:first-child {
+  border-top-left-radius: 2px;
+}
+.phase:last-child {
+  border-top-right-radius: 2px;
+}
+
+.phase:first-child::before, 
+.phase:nth-child(2)::before {
+  position: absolute;
+  content: "";
+  top: -50px;
+  right: 0;
+  height: 80px;
+  width: 6px;
+  border-radius: 5px;
+  background-color: var(--light-bg);
+}
+
+.phase:first-child::after, 
+.phase:nth-child(2)::after {
+  position: absolute;
+  top: -75px;
+  right: -22;
+  font-weight: bold;
+  
+}
+
+.phase:first-child::after {
+  content: "Q3 2023";
+}
+.phase:nth-child(2):after {
+  content: "Q4 2023";
+}
+.fade-bg {
+  height: 5rem ;
+  width: 100%;
+  background: linear-gradient(180deg, rgb(251, 148, 64, 0.00) 0%, #F1FF65 100%);
+}
+
+#footer {
+  background: url("images/artboard.png");
+  /* background-position-y: bottom; */
+}
+
+.footer-nav {
+  position: static;
+  bottom: 0;
+}
 .cloud {
   width: 25rem;
   position: absolute;
