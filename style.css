@@ -4,6 +4,7 @@
   --pri-color: #fb9440;
   --light: #f4f4f4;
   --light-bg: rgba(112, 73, 26, 0.48);
+  --dark: #70491A;
 }
 
 /* General Styling */
@@ -35,6 +36,17 @@ a:hover {
 }
 
 /* Utilities */
+.dark {
+  color: var(--dark);
+}
+
+.blur {
+  backdrop-filter: blur(5px);
+}
+
+.dark-bg {
+  background-color: var(--dark) !important;
+}
 .pri-color {
     color: var(--pri-color);
 }
@@ -54,9 +66,17 @@ a:hover {
   display: inline-block;
 }
 
+.transition {
+  transition: 0.4s;
+}
+
+.navbar-bg {
+   background-color: rgba(112, 73, 26, 0.48);
+   backdrop-filter: blur(4px);
+}
+
 /* Header */
 header {
-  background-color: rgb(251, 148, 64, 0.16);
   position: fixed;
   top: 0;
   width: 100%;
@@ -100,6 +120,16 @@ header {
   transition: 0.4s;
   color: var(--pri-color);
   background-color: var(--light);
+}
+
+.toggler {
+  font-size: 1.5rem;
+  color: var(--light);
+  transition: 0.4s;
+}
+
+.toggler:hover {
+  color: var(--pri-color);
 }
 
 /* Home */
@@ -155,9 +185,9 @@ header {
     font-size: 3rem;
 }
 
-.hero-image {
+/* .hero-image {
     width: 450px;
-}
+} */
 
 /* How to get started */
 .start-items {
@@ -172,6 +202,7 @@ header {
 }
 
 /* Games */
+
 .boxes {
   display: flex;
   justify-content: space-between;
@@ -246,12 +277,38 @@ header {
 
 #footer {
   background: url("images/artboard.png");
+  padding-top: 80px
   /* background-position-y: bottom; */
+}
+
+.comm {
+  border: solid 2px var(--dark);
+  padding: 20px;
+  margin: 0px auto 7rem auto;
+  text-align: center;
+  border-radius: 20px;
+  backdrop-filter: blur(3px);
+  background-color:  rgb(112, 73, 26, 0.4) ;
 }
 
 .footer-nav {
   position: static;
   bottom: 0;
+  background-color:  rgb(112, 73, 26, 0.4) ;
+  border-bottom: solid 2px var(--dark);
+}
+
+.social-links {
+  background-color:  rgb(112, 73, 26, 0.4)
+}
+
+.social .link {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  transition: 0.4s;
+}
+.link:hover {
+  color: var(--dark);
 }
 .cloud {
   width: 25rem;
@@ -261,3 +318,27 @@ header {
   display: none;
 }
 
+/* Extra small devices (portrait phones, less than 576px) */
+@media (min-width: 575.98px) { 
+
+  .hero-image {
+    width: 480px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #home .heading {
+    font-size: 2rem;
+  }
+
+  .app {
+    width: 8rem;
+    margin-right: 1rem;
+  }
+
+  #hero .heading,
+  #games .heading {
+    font-size: 1.5rem;
+  }
+ 
+}

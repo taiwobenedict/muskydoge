@@ -14,7 +14,7 @@
 <body>
 
     <!-- Header -->
-    <header>
+    <header class="header transition">
         <div class="container">
             <nav class="navbar navbar-expand-lg">
                 <!-- Logo -->
@@ -27,11 +27,11 @@
     
                 <!-- Toogler -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <div class="navbar-toggler-icon"><i class="fa fa-bars"></i></div>
+                    <div class="navbar-toggler-icon toggler"><i class="fa fa-bars"></i></div>
                 </button>
     
                  <!-- Navigations -->
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse transition" id="navbarNavAltMarkup">
                     <div class="navbar-nav ml-auto">
                         <a href="#home" class="nav-link">Home</a>
                         <a href="#about" class="nav-link">About</a>
@@ -127,7 +127,7 @@
                                 <p>Blackjack play to earn is in the beta stage so the prizes can be claimed by emailing muskydogeteam@gmail.com Ad revenue and in game purchases will be used to buy and burn and help the bank wallet thrive. We believe ads will help ensure the bank wallet has plenty of tokens for prizes.</p>
                                 
                                 <!-- Apple Download -->
-                                <svg xmlns="http://www.w3.org/2000/svg" width="166" height="50" viewBox="0 0 166 50" fill="none">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="app" width="166" height="50" viewBox="0 0 166 50" fill="none">
                                     <g filter="url(#filter0_b_188_332)">
                                     <path d="M8 50H158C162.418 50 166 46.4183 166 42V24.0518C166 21.9866 165.201 20.0014 163.771 18.5116L148.361 2.45975C146.853 0.888306 144.769 0 142.59 0H8C3.58172 0 0 3.58172 0 8V42C0 46.4183 3.58173 50 8 50Z" fill="#70491A" fill-opacity="0.48"/>
                                     </g>
@@ -143,7 +143,7 @@
                                 </svg>
 
                                 <!-- Google Download -->
-                                <svg xmlns="http://www.w3.org/2000/svg" width="166" height="50" viewBox="0 0 166 50" fill="none" class="ml-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="app" width="166" height="50" viewBox="0 0 166 50" fill="none" class="ml-4">
                                     <g filter="url(#filter0_b_188_329)">
                                     <path d="M8 50H158C162.418 50 166 46.4183 166 42V24.0518C166 21.9866 165.201 20.0014 163.771 18.5116L148.361 2.45975C146.853 0.888306 144.769 0 142.59 0H8C3.58172 0 0 3.58172 0 8V42C0 46.4183 3.58173 50 8 50Z" fill="#70491A" fill-opacity="0.48"/>
                                     </g>
@@ -169,7 +169,7 @@
                             <h1 class="heading">MUSKYDOGE GAME IS LIVE!</h1>
                             <p>MuskyDoge is a community driven token that's on the Binance Smart Chain. The goal is to reward the whole community with the MuskyDoge mobile games. There will also be hidden phrases of wallets defined by color in the game to keep users motivated to play!</p>
                               <!-- Apple Download -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="166" height="50" viewBox="0 0 166 50" fill="none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="app" width="166" height="50" viewBox="0 0 166 50" fill="none">
                                 <g filter="url(#filter0_b_188_332)">
                                 <path d="M8 50H158C162.418 50 166 46.4183 166 42V24.0518C166 21.9866 165.201 20.0014 163.771 18.5116L148.361 2.45975C146.853 0.888306 144.769 0 142.59 0H8C3.58172 0 0 3.58172 0 8V42C0 46.4183 3.58173 50 8 50Z" fill="#70491A" fill-opacity="0.48"/>
                                 </g>
@@ -185,7 +185,7 @@
                             </svg>
 
                             <!-- Google Download -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="166" height="50" viewBox="0 0 166 50" fill="none" class="ml-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="app" width="166" height="50" viewBox="0 0 166 50" fill="none" class="ml-4">
                                 <g filter="url(#filter0_b_188_329)">
                                 <path d="M8 50H158C162.418 50 166 46.4183 166 42V24.0518C166 21.9866 165.201 20.0014 163.771 18.5116L148.361 2.45975C146.853 0.888306 144.769 0 142.59 0H8C3.58172 0 0 3.58172 0 8V42C0 46.4183 3.58173 50 8 50Z" fill="#70491A" fill-opacity="0.48"/>
                                 </g>
@@ -300,19 +300,21 @@
                 </div>
             </div>
 
-            <div class="row row2 pt-5 mt-5">
-                <div class="col-md-8">
-                    <h2 class="heading">MUSKYDOGE GAME IS LIVE!</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur. Sed egestas volutpat neque urna turpis. Interdum feugiat suscipit adipiscing ipsum massa. Neque nunc maecenas donec facilisis molestie.</p>
-                    <div class="custom-card font-weight-bold"><a href="#">Get started</a></div>
-                    <a href="#" class="dark ml-3">Learn more <i class="fa fa-chevron-right"></i> </a>
-                </div>
-                <div class="col-md-4 d-flex align-items-center justify-content-center">
-                    <div class="custom-card">
-                        <img src="images/moskydoge-small.png" alt="">
-                    </div>
-                </div>
-            </div>
+           <div class=" pt-5 mt-5">
+               <div class="row row2">
+                   <div class="col-md-6 mt-3">
+                       <h2 class="heading">MUSKYDOGE GAME IS LIVE!</h2>
+                       <p>Lorem ipsum dolor sit amet consectetur. Sed egestas volutpat neque urna turpis. Interdum feugiat suscipit adipiscing ipsum massa. Neque nunc maecenas donec facilisis molestie.</p>
+                       <div class="custom-card font-weight-bold"><a href="#">Get started</a></div>
+                       <a href="#" class="dark ml-3">Learn more <i class="fa fa-chevron-right"></i> </a>
+                   </div>
+                   <div class="col-md-6 d-flex mt-3 align-items-center justify-content-center">
+                       <div class="custom-card">
+                           <img src="images/moskydoge-small.png" alt="">
+                       </div>
+                   </div>
+               </div>
+           </div>
         </div>
     </div>
 
@@ -483,22 +485,22 @@
 
     <div class="fade-bg"></div>
     
-    <div id="footer" class="pt-5">
+    <div id="footer" class="">
         <!-- Community -->
         <div id="community">
             <div class="container">
                 <div class="comm">
                     <h2 class="heading">Join our community</h2>
                     <p class="mt-2">Lorem ipsum dolor sit amet consectetur. Sed egestas volutpat neque urna turpis. Interdum feugiat suscipit adipiscing ipsum massa. Neque nunc maecenas donec facilisis molestie.</p>
-                    <a href="#" class="custom-card mx-auto">Join now</a>
+                    <a href="#" class="custom-card mx-auto dark-bg">Join now</a>
                 </div>
             </div>
         </div>
 
 
-        <header class="footer-nav">
+        <header class="footer-nav blur">
             <div class="container">
-                <nav class="d-flex justify-content-between align-items-center">
+                <nav class="d-flex nav py-5 justify-content-between align-items-center flex-wrap">
                     <!-- Logo -->
                     <a href="#home" class="logo-container d-flex justify-content-center align-items-center">
                         <div class="logo">
@@ -510,7 +512,7 @@
         
                      <!-- Navigations -->
                     <div class="" id="">
-                        <div class="navbar-nav d-flex">
+                        <div class="d-flex flex-wrap">
                             <a href="#home" class="nav-link">Home</a>
                             <a href="#about" class="nav-link">About</a>
                             <a href="#tokenomics" class="nav-link">Tokenomics</a>
@@ -518,8 +520,25 @@
                         </div>
                     </div>
                 </nav>
+
             </div>
         </header>
+        <!-- Social Links -->
+        <div class="social-links py-5 blur">
+            <div class="container">
+                <div class="d-flex justify-content-between  flex-wrap align-items-center">
+                    <div class="copyright mt-2">© 2023 MuskyDoge. All rights reserved.</div>
+                    <div class="social d-flex flex-wrap mt-2 ">
+                        <a href="#" target="_blank" class="link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank" class="link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank" class="link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" class="link"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" class="link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
 
     
