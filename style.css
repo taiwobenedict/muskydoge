@@ -323,6 +323,33 @@ header {
   display: none;
 }
 
+.bg-wall {
+  max-width: 400px;
+  position: absolute;
+  z-index: -1;
+
+}
+
+.bg-1 {
+  left: 0;
+  top: 100%;
+}
+
+.bg-2 {
+  right: 0;
+  top: 200%
+}
+
+.bg-3 {
+  right: 0;
+  top: 500%;
+}
+
+.bg-4 {
+  left: 0;
+  top: 370%;
+}
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (min-width: 575.98px) { 
 
