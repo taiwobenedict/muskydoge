@@ -345,10 +345,7 @@ header {
   top: 320%;
 }
 
-.cloud4 {
-  left: 0;
-  top: 400%;
-}
+
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (min-width: 575.98px) { 
