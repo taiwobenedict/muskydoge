@@ -190,9 +190,6 @@ header {
     font-size: 3rem;
 }
 
-/* .hero-image {
-    width: 450px;
-} */
 
 /* How to get started */
 .start-items {
@@ -282,10 +279,11 @@ header {
 
 #footer {
   background: url("images/artboard.png");
-  padding-top: 80px
-  /* background-position-y: bottom; */
+  padding-top: 80px;
 }
 
+
+/* Community */
 .comm {
   border: solid 2px var(--dark);
   padding: 20px;
@@ -296,6 +294,7 @@ header {
   background-color:  rgb(112, 73, 26, 0.4) ;
 }
 
+/* Footer Navigation */
 .footer-nav {
   position: static;
   bottom: 0;
@@ -303,6 +302,7 @@ header {
   border-bottom: solid 2px var(--dark);
 }
 
+/* Social Links */
 .social-links {
   background-color:  rgb(112, 73, 26, 0.4)
 }
@@ -315,39 +315,39 @@ header {
 .link:hover {
   color: var(--dark);
 }
-.cloud {
-  width: 25rem;
-  position: absolute;
-  bottom: 50%;
-  z-index: -1;
-  display: none;
-}
 
-.bg-wall {
+
+/* Background Wallpaper */
+.bg-pic {
   max-width: 400px;
   position: absolute;
   z-index: -1;
 
 }
 
-.bg-1 {
+.cloud1 {
   left: 0;
   top: 100%;
 }
 
-.bg-2 {
+.cloud2 {
   right: 0;
-  top: 200%
+  top: 180%
 }
 
-.bg-3 {
-  right: 0;
-  top: 500%;
-}
-
-.bg-4 {
+.brick {
   left: 0;
-  top: 370%;
+  top: 240%;
+}
+
+.cloud3 {
+  right: 0;
+  top: 320%;
+}
+
+.cloud4 {
+  left: 0;
+  top: 400%;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
